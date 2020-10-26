@@ -20,13 +20,13 @@
                     <a class="nav-item nav-link" href="{{ route('logout') }}" 
                     onclick="event.preventDefault();
                             document.getElementById('logout-form').submit()";>ログアウト</a>
+                </li>
                     <form action="{{ route('logout') }}" method="post" id="logout-form">
                         @csrf
                     </form>
-                </li>
                 @else
-                <li><a class="navbar-text" href="{{ route('login') }}">ログイン</a></li>
-                <li><a class="navbar-text" href="{{ route('register') }}">会員登録</a></li>
+                <li><a class="nav-item nav-link" href="{{ route('login') }}">ログイン</a></li>
+                <li><a class="nav-item nav-link" href="{{ route('register') }}">会員登録</a></li>
                 @endif
             </ul>
         </nav>

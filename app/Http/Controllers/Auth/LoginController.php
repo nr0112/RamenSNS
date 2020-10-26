@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -47,8 +47,8 @@ class LoginController extends Controller
 
     protected function loggedOut(Request $request)
     {
-    $request->session()->regenerate();
-    return view('/home');
+    // $request->session()->regenerate();
+    return redirect(route('home'));
     }
 
 }

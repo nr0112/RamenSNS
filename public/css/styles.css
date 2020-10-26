@@ -15,6 +15,11 @@ a{
 ul li{
     list-style: none;
 }
+
+.row{
+    margin: auto;
+}
+
 /* === header ==== */
 .navbar{
     display: flex;
@@ -156,13 +161,6 @@ ul li{
     margin-top: 20px;
 }
 
-.button-group{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
-}
-
 .like-button, .other-button{
     display: flex;
     align-items: flex-end;
@@ -175,26 +173,77 @@ ul li{
     padding: 3px 3px 3px 15px
 }
 
+.comments-right{
+    display: flex;
+}
+
+.button-group{
+    margin-top: 5px;
+}
+
 .form-group{
     text-align: right;
 }
 
+/* .comment-edit-form{
+    display: none;
+} */
+
+.comments-right textarea{
+    text-align: center;
+}
+
+.comment-delete, .comment-edit{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.comment-delete:hover, .comment-edit:hover{
+    width: 30px;
+    height: 30px;
+}
+
+
+
 /* ===== myposts.blade.php ===== */
-.profile{
+.mypost{
     background:#ea5550;
     display: flex;
     align-items: center;
 }
 
-.profile img{
+.mypost img{
     width: 50px;
     height: 50px;
 }
 
-.profile h1{
+.mypost h1{
     color: #111;
     font-size: 20px;
 }
+
+/* ===== setting.blade.php ===== */
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;
+}
+
+.profile h1, .profile h2{
+    color: #111;
+    font-size: 30px;
+}
+
+.profile p{
+    font-size: 20px;
+}
+
 
 /* ===== login.blade.php ===== */
 

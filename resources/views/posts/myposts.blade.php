@@ -3,7 +3,7 @@
 @section('content')
 
     <a class="btn btn-success" href="{{ route('posts.showUploadForm') }}">投稿する</a>
-    <div class="profile">
+    <div class="mypost">
         <img src="{{ asset('storage/materials/ramen1.png') }}" alt="ラーメンのシルエット">
         <h1>{{ Auth::user()->name }}さんの投稿</h1>
     </div>

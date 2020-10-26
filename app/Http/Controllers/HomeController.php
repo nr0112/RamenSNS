@@ -23,7 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // Postcontrollerにかく？
-        return view('auth.login');
+        // return view('home');
     }
 }
