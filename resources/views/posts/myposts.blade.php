@@ -4,7 +4,7 @@
 
     <a class="btn btn-success" href="{{ route('posts.showUploadForm') }}">投稿する</a>
     <div class="mypost">
-        <img src="{{ seccure_asset('storage/materials/ramen1.png') }}" alt="ラーメンのシルエット">
+        <img src="{{ secure_asset('storage/materials/ramen1.png') }}" alt="ラーメンのシルエット">
         <h1>{{ Auth::user()->name }}さんの投稿</h1>
     </div>
 

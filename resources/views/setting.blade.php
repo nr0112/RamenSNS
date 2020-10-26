@@ -5,7 +5,7 @@
 <div class="profile container">
   <div class="row col-sm-12">
     <h1>プロフィール</h1>
-    <img class="user-image" src="{{ seccure_asset('storage/user_images/'.Auth::user()->user_image) }}">
+    <img class="user-image" src="{{ secure_asset('storage/user_images/'.Auth::user()->user_image) }}">
     <p>{{ Auth::user()->name }}</p>
     <p>{{ Auth::user()->email }}</p>
   </div>
