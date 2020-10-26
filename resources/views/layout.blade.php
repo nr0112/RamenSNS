@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="navbar navbar-light mb-2 navbar-expand-sm" style="background-color: #111">
-            <img class="brand-logo" src="{{ asset('storage/materials/ramen2.png') }}" alt="ラーメンのシルエット">
+            <img class="brand-logo" src="{{ secure_asset('storage/materials/ramen2.png') }}" alt="ラーメンのシルエット">
             <a class="navbar-brand" href="{{ route('home') }}">らーめん部</a>
             <ul>
                 <li><a class="nav-item nav-link" href="{{ route('home') }}">ホーム</a></li>

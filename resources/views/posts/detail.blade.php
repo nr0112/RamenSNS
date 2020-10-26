@@ -8,7 +8,7 @@
             <div class="col-sm-6">
                 <div class="detail-left">
                     <div class="detail-user">
-                        <img class="user-image" src="{{ asset('storage/user_images/'.$post->user->user_image) }}">
+                        <img class="user-image" src="{{ secure_asset('storage/user_images/'.$post->user->user_image) }}">
                         <p class="post-user">{{ $post->user->name }}</p>
                     </div>
                     <p class="post-time">{{ $post->created_at }}</p>
@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-sm-6 detail-right">
-                <img class="detail-photo img-thumbnail" src="{{ asset('storage/photos/'.$post->filename) }}" alt="投稿された画像">
+                <img class="detail-photo img-thumbnail" src="{{ secure_asset('storage/photos/'.$post->filename) }}" alt="投稿された画像">
             </div>
         </div>
         
@@ -84,11 +84,11 @@
                             <div class="comments-right col-sm-3">
                                 @if(Auth::id() == $comment->user_id)
                                     <form id="comment-delete-submit-{{ $number }}" class="comment-delete-submit" action="{{ route('comments.destroy', ['post_id' => $post->id, 'comment_id' => $comment->id]) }}" method="post">
-                                        <input type="image" class="comment-delete" src="{{ asset('storage/materials/delete.png') }}" alt="コメント削除ボタン">
+                                        <input type="image" class="comment-delete" src="{{ secure_asset('storage/materials/delete.png') }}" alt="コメント削除ボタン">
                                         @method('DELETE')
                                         @csrf
                                     </form>
-                                    <img id="comment-edit-{{ $number }}" class="comment-edit" src="{{ asset('storage/materials/edit.png') }}" alt="コメント編集ボタン">
+                                    <img id="comment-edit-{{ $number }}" class="comment-edit" src="{{ secure_asset('storage/materials/edit.png') }}" alt="コメント編集ボタン">
                                 @endif
                             </div>
                         </li>
