@@ -69,7 +69,7 @@ class PostController extends Controller
             'user_id' => Auth::id(),
         ]);
         
-        return redirect('home');
+        return route('home');
     }
 
     public function destroy(int $post_id)
@@ -82,7 +82,7 @@ class PostController extends Controller
             return '投稿を削除できませんでした！';
         }else{
             $post->delete();
-            return redirect('home');
+            return route('home');
         }
     }
 
