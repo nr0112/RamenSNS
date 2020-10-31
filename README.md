@@ -1,3 +1,42 @@
+# オリジナルSNS
+
+<p>ラーメンをテーマにしたSNSアプリです</p>
+
+### 実装済み機能
+<ul>
+    <li>会員登録、ログインなどの認証機能</li>
+    <li>投稿の追加・編集・削除機能</li>
+    <li>コメントの追加・編集・削除機能</li>
+    <li>「いいね」ボタンを押す・取り消す機能</li>
+</ul>
+
+### 実装予定
+<ul>
+    <li>カレンダー</li>
+    <li>コメントに返信する機能</li>
+    <li>ブックマーク保存・タグ付け機能</li>
+    <li>ユーザーや投稿を検索する機能</li>
+</ul>
+
+## 使用言語
+<ul>
+    <li>Laravel Framework 7.28.3</li>
+    <li>PHP 7.2.33</li>
+</ul>
+
+## 開発環境
+<ul>
+    <li>Vagrant, VirtualBox</li>
+    <li>Visual Studio Code</li>
+</ul>
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
